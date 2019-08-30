@@ -95,9 +95,11 @@ Default Options:
   mediaQuery: false,
   replace: true,
   exclude: [],
-  landscape: false,
+  landscapeAll: false,
+  landscapeManual: false,
   landscapeUnit: 'vw',
-  landscapeWidth: 568
+  landscapeWidth: 568,
+  disableConvertComment: 'off',
 }
 ```
 - `unitToConvert` (String) unit to convert, by default, it is px.
@@ -122,7 +124,8 @@ Default Options:
 - `exclude` (Array or Regexp) Ignore some files like 'node_modules'
     - If value is regexp, will ignore the matches files.
     - If value is array, the elements of the array are regexp.
-- `landscape` (Boolean) Adds `@media (orientation: landscape)` with values converted via `landscapeWidth`.
+- `landscapeAll` (Boolean) Adds `@media (orientation: landscape)` with values converted via `landscapeWidth`.
+- `landscapeManual` (Boolean) Adds `@media (orientation: landscape)` with values converted via `landscapeWidth`.
 - `landscapeUnit` (String) Expected unit for `landscape` option
 - `landscapeWidth` (Number) Viewport width for landscape orientation.
 
