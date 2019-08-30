@@ -1,5 +1,5 @@
 {
-  "name": "postcss-px-2-viewport",
+  "name": "postcss-convert-pixel-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
   "version": "0.0.1",
   "author": "pipu11qiao <pipu11qiao@gmail.com>",
